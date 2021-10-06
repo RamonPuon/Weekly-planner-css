@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400&display=swap" rel="stylesheet"> 
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Weekly Planner</title>
     <style>
+        
+
         .body{
-            font-family: 'Nunito', sans-serif;
-            
+            font-family: 'Poppins', sans-serif;
             display: grid;
             height: 100vh;
             margin: 0;
@@ -68,6 +69,12 @@
         .goals img{
             width: 26px;
         }
+
+        .main-content > div:nth-child(2){
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-gap: 20px;
+        }
     </style>
 </head>
 <body>
@@ -79,7 +86,7 @@
             </div>
             <div class="goals">
                 <div class="glassmorphism-effect">
-                    <img src="https://img-premium.flaticon.com/png/128/3145/premium/3145755.png?token=exp=1633482694~hmac=0df60881ef3742fd8909e2893a2fb958" alt="book">
+                   <img src="https://img-premium.flaticon.com/png/512/3145/premium/3145755.png?token=exp=1633488574~hmac=df0c9569105138abcc84a891005c3676" alt="book">
                 </div>
                 <p>Leer más</p>
             </div>
@@ -89,7 +96,34 @@
             <div></div>
         </section>
         
-        <section class="glassmorphism-effect padding-box"></section>
+        <section class="main-content glassmorphism-effect padding-box">
+            <div class="title">
+                <p>Objetivos</p>
+                <p>Lo que quiero lograr</p>
+            </div>
+            <div>
+                <div>
+                    <p>Lunes</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Martes</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Miércoles</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Jueves</p>
+                    <div></div>
+                </div>
+                <div>
+                    <p>Viernes</p>
+                    <div></div>
+                </div>
+            </div>
+        </section>
     </div>
 </body>
 </html>
